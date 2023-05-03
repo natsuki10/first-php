@@ -8,18 +8,18 @@
 </head>
 <body>
   <p>日本の首都は？</p>  
-<form action="index.php" method="POST">
-    <input type="text" name="text">
+  <form action="index.php" method="POST">
+    <input type="text" name="answer">
     <input type="submit" value="OK">
     <br>
-<?php
-$input_data = $_POST['text'];
-if ($input_data == '東京'){
-  echo '正解';
-}else{
-  echo '不正解';
-}
-?>
-</form>
+    <?php
+    $answer = $_POST['answer'];
+    if ($answer === '東京') {
+        echo '正解' ;
+    } else {
+        echo '不正解' ;
+    }
+    ?>
+  </form>
 </body>
 </html>
